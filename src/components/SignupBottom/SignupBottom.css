@@ -1,0 +1,20 @@
+.signup-bottom{
+    background: #F3F3F3;
+    padding: 90px 80px;
+}
+.signup-bottom i{
+    color:#fafafa;
+}
+.signup-bottom .logos{
+    width: fit-content;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.signup-bottom .logos .logo{
+    border-radius: 50%;
+    background-color: #1e293c;
+    padding: 13.5px;
+
+}

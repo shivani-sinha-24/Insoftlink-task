@@ -1,0 +1,42 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  top: 0px !important;
+  /* line-height: 1;
+  word-break: break-word;
+  font-weight: 400; */
+}
+body > .skiptranslate {
+  display: none;
+}
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+body:hover{
+  cursor: default;
+}
+@media print {
+  #google_translate_element {
+    display: none;
+  }
+}
+.skiptranslate.goog-te-gadget span{
+  display: none;
+}
+.skiptranslate.goog-te-gadget{ 
+  color: #192334;
+}
+#google_translate_element select {
+  width: 160px;
+  line-height: 20px;
+  padding: 5px 5px 3px;
+  margin: 0 10px;
+  min-height: 25px;
+  border-radius: 5px;
+  color: #fff;
+  position: relative;
+  top: 1px;
+  margin-bottom: -30px;
+  padding-left: 23px;
+  background: url('https://www.actpal.com/Content_V2/assets/icons/new/light-icons/language.svg') no-repeat left 5px center #192334;
+  background-size: 18px;
+}

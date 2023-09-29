@@ -1,0 +1,38 @@
+.signup-page .signup-nav{
+    color: white;
+}
+.signup-page .signup-nav .nav-first{
+    background: #192334;
+    padding: 10px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.signup-page .signup-nav .nav-first .left,
+.signup-page .signup-nav .nav-first .right{
+    display: flex;
+    gap: 8px;
+}
+.signup-page .signup-nav .nav-first .left .item:nth-child(1){
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    border-bottom: 1px solid white;
+    height: fit-content;
+}
+.signup-page .signup-nav .nav-first .left .item .img-txt{
+}
+.signup-page .signup-nav .nav-first .left .item .img-txt p:nth-child(1){
+    font-size: 10px !important;
+}
+.signup-page .signup-nav .nav-first .left .item .img-txt p:nth-child(2){
+    font-size: 13.5px !important;
+}
+.signup-page .signup-nav .nav-first img{
+    width: 22.5px;
+    height: 22.5px;
+}
+.signup-page .signup-nav .nav-second{
+    background: #1E293C;
+    padding: 10px 0px;
+}

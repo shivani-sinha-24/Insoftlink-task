@@ -1,0 +1,7 @@
+.home-work{
+    background: linear-gradient(0deg, rgba(30, 41, 60, 0.8), rgba(30, 41, 60, 0.8)), url('https://www.actpal.com/Content_V2/assets/img/webp/home_video_bg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 80px;
+}

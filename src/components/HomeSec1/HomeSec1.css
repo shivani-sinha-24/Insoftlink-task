@@ -1,0 +1,12 @@
+.sec1{
+    background: linear-gradient(0deg, rgba(30, 41, 60, 0.9), rgba(30, 41, 60, 0.9)), url('https://www.actpal.com/Content_V2/assets/img/webp/banner_bg.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+.sec1 .welcome{
+    margin-top: 110px;
+    padding: 0 80px 80px 80px;
+    display: flex;
+}

@@ -79,8 +79,8 @@ const Testimonials = () => {
             <div className="arrow arrow-left custom-left-arrow " >
               <i className="fa-solid fa-lg fa-arrow-left"></i>
             </div>
-            <div className="arrow arrow-left custom-left-arrow " >
-              <i className="fa-solid fa-lg fa-arrow-left"></i>
+            <div className="arrow arrow-right custom-right-arrow " >
+              <i className="fa-solid fa-lg fa-arrow-right"></i>
             </div>
         </div>
     </div>

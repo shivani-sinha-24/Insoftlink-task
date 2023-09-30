@@ -1,3 +1,104 @@
 .main-content{
     background: #efecec;
+    padding: 50px 80px 160px 80px;
+}
+.main-content .h3{
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.main-content p.desc{
+    font-size: 14px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+}
+.main-content form{
+    width: 480px;
+    max-width: 100%;
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    margin: auto;
+} 
+.main-content form label{
+    color: #212529;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    display: inline-block;
+    margin-bottom: 5px;
+    font-family: 'Inter', sans-serif;
+}
+.main-content form .form_input{
+    margin: 0;
+    padding: 0;
+    height: 0;
+}
+.main-content form input{
+    width: 100%;
+    padding:12px;
+    height: 36px;
+    min-height: 46px;
+    background: #FFFFFF;
+    border: 1px solid #CED4DA;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #6C757D;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.main-content form i{
+    position: relative;
+    top: -42.5px;
+    right: -390px;
+}
+.main-content .or{
+    margin: 8px 0;
+    text-align: center;
+}
+.main-content form button,
+.main-content .login-btn{
+    font-size: 15px;
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #1866B4;
+    background: none;
+    border-radius: 4px;
+    color: #1866B4;
+}
+.main-content label.conditions{
+    color: rgb(33, 37, 41);
+    font-size: 14px;
+    line-height: 2;
+    font-weight: 400;
+    display: inline-block;
+    margin-bottom: 5px;
+    font-family: Inter, sans-serif;
+}
+.main-content input[type="checkbox"][name="conditions"]{
+    margin: 0 10px 0 0;
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: -10px;
+}
+.main-content form button.submit-btn{
+    color: white;
+    background: #1866B4;
+}
+.main-content .conditions{
+    color: #007bff;
+}
+
+
+/* ************************** HOVER CSS ************************** */
+
+
+.main-content form button:hover{
+    cursor: pointer;
 }

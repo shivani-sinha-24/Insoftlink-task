@@ -1,5 +1,5 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   top: 0px !important;
   /* line-height: 1;
   word-break: break-word;
@@ -39,4 +39,8 @@ body:hover{
   padding-left: 23px;
   background: url('https://www.actpal.com/Content_V2/assets/icons/new/light-icons/language.svg') no-repeat left 5px center #192334;
   background-size: 18px;
+}
+a{
+  text-decoration: none;
+  color: inherit;
 }

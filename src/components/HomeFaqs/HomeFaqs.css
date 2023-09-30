@@ -1,4 +1,130 @@
 .home-faqs{
     text-align: center;
-    padding: 50px 210px;
+    padding: 50px 210px;    
+    background: #F9FAFB;
+}
+.home-faqs .heading{
+    font-weight: 550;
+    font-size: 22.5px;
+}
+.home-faqs .sub-heading{
+    font-size: 18px!important;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.home-faqs .faqs{
+    margin: 80px 0 0 0;
+}
+.home-faqs .faqs .faq{
+    border-bottom: 1px solid #E4E7EC;;
+}
+.home-faqs .faqs .faq .top{
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    justify-content: space-between;
+}
+.home-faqs .faqs .faq .top .question{
+    font-size: 20px !important;
+    font-weight: 500;
+    text-align: left;
+    margin: 0;
+    padding: 15px 0;
+}
+.home-faqs .faqs .faq .top span{
+    width: 22.5px;
+    height: 22.5px;
+    border:2px solid #0060c7;
+    border-radius: 50%;
+    color: #0060c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-faqs .faqs .faq .answer p{
+    color: #667085;
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.home-faqs button.view{
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    border: 1px solid #343a40;
+    background-color: #343a40;
+    border-radius: 4px;
+    margin: 15px 0;
+    color: #fff;
+}
+.home-faqs .get-in-touch{
+    background: #fff;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 35px;
+    padding: 50px 0 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.home-faqs .get-in-touch .images{
+    display: inline-block;
+    margin: auto;
+    position: relative;
+    margin-bottom: -100px;
+}
+.home-faqs .get-in-touch .images img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+}
+.home-faqs .get-in-touch .images .img1{
+    position: relative;
+    right: -30px;
+}
+.home-faqs .get-in-touch .images .img2{
+    position: relative;
+    z-index: 3;
+    top: -55px;
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+}
+.home-faqs .get-in-touch .images .img3{
+    position: relative;
+    left: -25px;
+    top: -110px;
+}
+.home-faqs .get-in-touch .p1{
+    font-weight: 550;
+    font-size: 22.5px;
+}
+.home-faqs .get-in-touch .p2{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: center;
+}
+.home-faqs .get-in-touch button{
+    background: #1866B4;
+    color: #fff;
+    border: 0;
+    width: fit-content;
+    margin: 15px auto 15px auto;
+    padding: 8px 12px ;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+
+
+/* ************************** HOVER CSS ************************** */
+
+
+
+.home-faqs .top:hover,
+.home-faqs button:hover{
+    cursor: pointer;
 }

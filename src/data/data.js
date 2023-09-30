@@ -5,7 +5,7 @@ export const services = [
     },
     {
         name:'ACTPAL services?',
-        content:'We provide a diverse spectrum of personalized care andsupport, specifically designed to cater to individual needs,delivered by expert staff members of your choosing. Usershave the flexibility to peruse a wide array of services and optfor the one that precisely aligns with their needs. Our servicesare accessible for both online appointments and in-personconsultations.'
+        content:'We provide a diverse spectrum of personalized care andsupport, specifically designed to cater to individual needs,delivered by expert staff members of your choosing. Usershave the flexibility to peruse a wide array of services and opt for the one that precisely aligns with their needs. Our servicesare accessible for both online appointments and in-personconsultations.'
     }
 ]
 

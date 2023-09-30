@@ -1,3 +1,67 @@
 .home-about{
-    padding: 50px 80px;
+    padding: 50px 80px;    
+    background: rgba(229, 229, 229, 0.65);
+}
+.home-about .h2{
+    color: #667085;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.home-about .h3{
+    font-size: 32.5px;
+    font-weight: 700;
+}
+.home-about .abouts{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin: 30px 0;
+}
+.home-about .abouts .about{
+    background: white;
+    width: 48.5%;
+    display: flex;
+    gap: 30px;
+    padding: 40px 50px;
+    border-radius: 20px;
+}
+.home-about .abouts .about .left{
+    background: rgba(24, 102, 180, 0.05);
+    border-radius: 14px;
+    padding: 12px;
+    height: min-content;
+}
+.home-about .abouts .about img{
+    width: 20px;
+    height: 20px;
+}
+.home-about .abouts .about .name{
+    color: #212529;
+    line-height: 1.3;
+    font-weight: 500;
+    font-size: 20px;
+}
+.home-about .abouts .about .content{
+    color: #212529;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: 10px;
+}
+.home-about .abouts .about .content span{
+    font-style: italic;
+    font-weight: 600;
+    font-size: small;
+}
+
+
+
+/* ************************** HOVER CSS ************************** */
+
+
+.home-about .abouts .about .name:hover,
+.home-about .abouts .about img:hover{
+    cursor: pointer;
 }

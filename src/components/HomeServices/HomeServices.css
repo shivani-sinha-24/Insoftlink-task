@@ -1,3 +1,63 @@
 .home-services{
     padding: 50px 80px;
 }
+.home-services p.h1,
+.home-services p.h2{
+    text-align: center;
+}
+.home-services p.h1{    
+    font-size: 30px;
+    font-weight: 600;
+}
+.home-services p.h2{
+    color: #667085;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.home-services .services{
+    display: flex;
+    margin: 30px 0 0 0;
+    gap: 40px;
+}
+.home-services .services .service-card{
+    flex: 1;
+    color: white;
+    padding: 30px 40px 50px 40px;
+    border-radius: 25px ;
+}
+.home-services .services .service-card:nth-child(1){
+    background:#1866B4;
+}
+.home-services .services .service-card:nth-child(2){
+    background:#1E293C;
+}
+.home-services .services .service-card .name{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.home-services .services .service-card .content{
+    font-size: 16.5px;
+    line-height: 1.4;
+}
+.home-services button{    
+    border: none;
+    font-size: 14px;
+    color: #1866B4;
+    background: #fff;
+    border-radius: 6px;
+    padding: 8px 30px;
+    margin: 30px 0;
+}
+
+
+
+
+/* ************************** HOVER CSS ************************** */
+
+
+.home-services button:hover{
+    cursor: pointer;
+}

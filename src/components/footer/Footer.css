@@ -1,5 +1,75 @@
 .footer{
     background: #1E293C;
     color:#fafafa;
-    padding: 50px 80px;
+    padding: 50px 80px 40px 80px;
+}
+.footer .h4{
+    margin-bottom: 5px;
+    font-size: larger !important;
+    font-weight: 500 !important;
+}
+.footer .top{
+    padding-bottom: 40px;
+}
+.footer .top,
+.footer .bottom{
+    display: flex;
+}
+.footer .top .left,
+.footer .top .right{
+    flex-basis: 50%;
+}
+.footer .top .left{
+    padding: 0 220px 0 0;
+    font-size: large;
+    line-height: 1.45;
+}
+.footer .top .left img{
+    width: 200px;
+    margin-bottom: 15px;
+}
+.footer .top .left div p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.footer .top .left div.location p {
+    font-size: large;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.footer .top .right{
+    margin-top: -5px;
+}
+.footer .top .right,
+.footer .bottom .right{
+    display: flex;
+    gap: 22.5px;
+    padding: 0 0 0 20px;
+}
+.footer .top .right .content .h4{
+    margin-bottom: 20px;
+}
+.footer .top .right .content p{
+    margin: 18px 0;
+    font-size: 14px;
+}
+.footer .bottom{
+    border-top: 1px solid rgb(214, 214, 214);
+    justify-content: space-between;
+    padding-top: 40px;
+    align-items: center;
+    font-size: 14px;
+}
+.footer .contact-us{
+    margin: 20px 0;
+}
+
+
+
+/* ************************** HOVER CSS ************************** */
+
+
+.footer .top .right .content p:hover,
+.footer .bottom .right div:hover{
+    cursor: pointer ;
 }

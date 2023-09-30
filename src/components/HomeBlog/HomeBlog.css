@@ -1,3 +1,86 @@
 .home-blog{
     padding: 50px 80px;
+    background: #F3F3F3;
+}
+.home-blog .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.home-blog .top .left{
+    color: #1866B4 !important;
+    font-size: 22.5px;
+}
+.home-blog .top .right button{    
+    background: #1866B4;
+    color: #fff;
+    border: 0;
+    width: fit-content;
+    margin: 15px auto 15px auto;
+    padding: 8px 12px ;
+    font-size: 16px;
+    border-radius: 4px;
+}
+.home-blog .p1{
+    font-weight: 550;
+    font-size: 24px;
+}
+.home-blog .p2{    
+    color: #667085;
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.home-blog .blogs{
+    margin-top: 60px !important;
+    display: flex;
+    gap: 20px;
+}
+.home-blog .blogs .blog{
+    background: white;
+    padding:30px 20px;
+    border-radius: 22.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.home-blog .blogs .blog img{
+    width: 400px;
+}
+.home-blog .blogs .blog .b-details{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.home-blog .blogs .blog .b-details .type{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #667085;
+    font-weight: bolder;
+}
+.home-blog .blogs .blog .b-details .type i{
+    color: rgb(45, 45, 45);
+    transform: rotate(-45deg);
+}
+.home-blog .blogs .blog .heading{
+    font-size: 20px;
+    margin: 12px 0px;
+    font-weight: 600;
+}
+.home-blog .blogs .blog .b-details .detail{
+    color: #667085;
+    font-size: 15px;
+}
+
+
+
+/* ************************** HOVER CSS ************************** */
+
+
+.home-blog .top .right button:hover,
+.home-blog .blogs .blog .b-details .type i:hover{
+    cursor: pointer;
 }

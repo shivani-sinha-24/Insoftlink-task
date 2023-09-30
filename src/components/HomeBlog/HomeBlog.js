@@ -13,8 +13,8 @@ const HomeBlog = () => {
                 <button>View All Post</button>
             </div>
         </div>
-        <p>Latest blog posts</p>
-        <p>Equip your modern teams with the essential tools and strategies necessary to propel their companies toward growth.</p>
+        <p className='p1'>Latest blog posts</p>
+        <p className='p2'>Equip your modern teams with the essential tools and strategies necessary to propel their companies toward growth.</p>
         <div className="blogs">
             {
                 homeBlogs?.map(blog=> <div key={Number(Math.random()+new Date().getMilliseconds())} className="blog">

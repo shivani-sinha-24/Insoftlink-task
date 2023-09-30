@@ -1,9 +1,51 @@
 .signup-bottom{
     background: #F3F3F3;
-    padding: 90px 80px;
+    padding: 110px 80px;
+    display: flex;
+    gap: 20px;
 }
 .signup-bottom i{
     color:#fafafa;
+}
+.signup-bottom .h3{
+    font-size: 27.5px;
+}
+.signup-bottom .h4{
+    color: #667085;
+    font-size: 17.5px!important;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.signup-bottom .left,
+.signup-bottom .right{
+    width: 50%;
+}
+.signup-bottom .left input{
+    height: 48px;
+    padding: 10px;
+    background: #fff;
+    color: #667085;
+    border-radius: 8px 0px 0px 8px;
+    border: 1px solid #D0D5DD;
+    font-size: 16px;
+    line-height: 1.2;
+    min-width: 100px;
+    width: calc(100% - 130px);
+}
+.signup-bottom .left button{
+    width: 120px;
+    height: 47px;
+    position: relative;
+    left: -10px;
+    border-radius: 0px 4px 4px 0px;
+    border: 1px solid #1866B4;
+    background: #1866B4;
+    color:white;
+    font-size: 16px;
+}
+.signup-bottom .left .text{
+    font-size: 14px;
+    margin-top: 10px;
 }
 .signup-bottom .logos{
     width: fit-content;    
@@ -15,6 +57,27 @@
 .signup-bottom .logos .logo{
     border-radius: 50%;
     background-color: #1e293c;
-    padding: 13.5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signup-bottom .h3,
+.signup-bottom .h4{
+    font-weight: 500;
+}
+.signup-bottom .right{
+    padding: 0 0 0 120px;
+}
 
+
+
+/* ************************** HOVER CSS ************************** */
+
+
+
+.signup-bottom .left button:hover,
+.signup-bottom .logos .logo:hover{
+    cursor: pointer;
 }

@@ -1,18 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './HomeSec1.css'
 import HomeNav from '../homeNav/HomeNav'
 import { Link } from 'react-router-dom'
 
-const HomeSec1 = () => {
+const HomeSec1 = ({scrolling, setScrolling}) => {
+
   return (
     <div className='sec1'>
-      <HomeNav/>
+      {!scrolling && <HomeNav scrolling={scrolling} setScrolling={setScrolling} />}
       <div className="welcome">
         <div className="left">
-            <h1>Welcome to </h1>
-            <span>
+            <div className="top">
+                <p className='h1'>Welcome to </p>
                 <img src="https://www.actpal.com/Content_v2/assets/img/actpal_banner.svg" alt="" />
-            </span>
+            </div>
             <p>
                 Unleash and nurture your potential, generate value, organize
                 daily tasks collaboratively with individuals or chosen groups,
@@ -43,15 +44,15 @@ const HomeSec1 = () => {
         </div>
         <div className="right">
             <form action="">
-                <h3>Welcome back!</h3>
+                <p className='h3'>Welcome back!</p>
                 <p>Login to your account to continue</p>
                 <div className="email_input">
                     <label htmlFor="email">Email Address</label>
-                    <input type="email" name="email" id="email" />
+                    <input type="email" name="email" id="email" placeholder='Your E-mail' />
                 </div>
                 <div className="email_input">
                     <label htmlFor="password">Your Password</label>
-                    <input type="password" name="password" id="password" />
+                    <input type="password" name="password" id="password" placeholder='Your Password'/>
                 </div>
                 <div className="remember">
                     <div className="left">
@@ -63,9 +64,11 @@ const HomeSec1 = () => {
                     </div>
                 </div>
                 <button>Sign In</button>
+                <p className='or'>or</p>
+                <button  className='new-acc'onClick={(e)=>e.preventDefault()}>
+                    Create New Account
+                </button>
             </form>
-            <p>or</p>
-            <button>Create New Account</button>
         </div>
       </div>
     </div>

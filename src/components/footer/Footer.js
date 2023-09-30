@@ -9,20 +9,22 @@ const Footer = () => {
           <img src="https://www.actpal.com/Content_V2/assets/img/footer_logo.svg" alt="" />
           <p>ACTPAL is a customer-centric company dedicated to offering comprehensive services and shopping experiences to its valued customers....</p>
           <div className="contact-us">
-            <h4>Contact us</h4>
+            <p className='h4'>Contact us</p>
             <p>
               <a href="mailto:support@actpal.com">support@actpal.com</a>
             </p>
-            <p></p>
+            <p>
+              <a href="tel:+1-6572312092">+1-(657) 231-2092</a>
+            </p>
           </div>
           <div className="location">
-            <h4>Location</h4>
+            <p className='h4'>Location</p>
             <p>17192 Murphy Ave #16233 Irvine, CA, 92623</p>
           </div>
         </div>
         <div className="right">
           <div className="content">
-            <h4>Company</h4>
+            <p className='h4'>Company</p>
             <p>ACTPAL Information</p>
             <p>Why We Are Different</p>
             <p>How It Works</p>
@@ -37,7 +39,7 @@ const Footer = () => {
             <p>ACTPAL Guidance</p>
           </div>
           <div className="content">
-            <h4>My Account</h4>
+            <p className='h4'>My Account</p>
             <p>About Us</p>
             <p>Privacy Policy</p>
             <p>Terms & Conditions</p>

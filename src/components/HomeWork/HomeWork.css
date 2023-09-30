@@ -3,5 +3,39 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px 80px;
+    padding: 50px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
+.home-work .left,
+.home-work .right{
+    width: 50%;
+}
+.home-work .left{
+    padding: 0 50px 0 0;
+}
+.home-work .left .p1{
+    font-size: 18px!important;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.home-work .left .p2{
+    font-size: 30px;
+}
+.home-work .left .p3{
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 14px;
+}
+.home-work .right img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+
+/* ************************** HOVER CSS ************************** */
+
+

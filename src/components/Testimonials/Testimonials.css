@@ -1,3 +1,99 @@
 .home-testimonial{
     padding: 50px 80px;
+    background: #fff !important;
+}
+.home-testimonial .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.home-testimonial .top .left{
+    font-size: 27px;
+    font-weight: 600;
+}
+.home-testimonial .top .right button{    
+    background: #1866B4;
+    color: #fff;
+    border: 0;
+    width: fit-content;
+    margin: 15px auto 15px auto;
+    padding: 8px 12px ;
+    font-size: 16px;
+    border-radius: 4px;
+}
+.home-testimonial .heading{
+    color: #667085;
+    font-size: 18px!important;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.home-testimonial .testimonials{
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.home-testimonial .testimonials .testimonial-card{
+    width: 320px;
+    height: 350px;
+    display: flex;
+    padding: 40px;
+    border-radius: 15px;
+    align-items: flex-end;
+}
+.home-testimonial .testimonials .testimonial-card .text{
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    width: 100%;
+    max-height: 80%;
+    overflow-y: auto;
+    text-align: left;
+    display: flex;flex-direction: column;
+    /* gap: 10px; */
+}
+.home-testimonial .testimonials .testimonial-card .text .detail{    
+    font-size: 14px;
+    color: #090909;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+.home-testimonial .testimonials .testimonial-card .text .name{
+    font-weight: 600;
+    font-size: 20px;
+    color: #090909;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+.home-testimonial .testimonials .testimonial-card .text .company{
+    font-size: 16px;
+    margin-bottom: 5px;    
+    color: #172B4D !important;
+    font-weight: 550;
+}
+.home-testimonial .arrows{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.home-testimonial .arrows .arrow{
+    border: 1px solid #667085;
+    border-radius: 50%;
+    color: #667085;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* ************************** HOVER CSS ************************** */
+
+
+.home-testimonial .top .right button:hover,
+.home-testimonial .testimonials .testimonial-card .text .stars:hover,
+.home-testimonial .arrows .arrow:hover{
+    cursor: pointer;
 }

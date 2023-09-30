@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './HomeNav.css'
 
-const HomeNav = () => {
+const HomeNav = ({scrolling, setScrolling}) => {
+
+  // Define the CSS class based on the scrolling state
+  const navbarClass = scrolling ? 'home-nav scrolled' : 'home-nav';
   return (
-    <div className='home-nav'>
+    <div className={navbarClass}>
       <div className="left">
         <img src="https://www.actpal.com/Content_V2/assets/img/actpal_logo.svg" alt="" />
       </div>

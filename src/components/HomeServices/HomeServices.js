@@ -5,16 +5,16 @@ import { services } from '../../data/data'
 const HomeServices = () => {
   return (
     <div className='home-services'>
-        <h1>Our Services</h1>
-        <p>
+        <p className='h1'>Our Services</p>
+        <p className='h2'>
             Equip your modern teams with the essential tools and
             strategies necessary to propel their companies toward growth.
         </p>
         <div className="services">
             {
                 services?.map(service=> <div key={Number(Math.random()+new Date().getMilliseconds())} className="service-card">
-                    <h3>{service?.name}</h3>
-                    <p>{service?.content}</p>
+                    <p className='name'>{service?.name}</p>
+                    <p className='content'>{service?.content}</p>
                     <button>Comming Soon</button>
                 </div> )
             }

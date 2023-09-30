@@ -39,7 +39,7 @@ const Testimonials = () => {
             </div>
         </div>
         <p className='heading'>Testimonials</p>
-         <Carousel 
+        <Carousel 
             arrows={false}
             responsive={responsive}
             autoPlay={true}
@@ -49,6 +49,12 @@ const Testimonials = () => {
             infinite={true}
             partialVisible={false}
             dotListClass="custom-dot-list-style"
+            customLeftArrow={<div className="arrow arrow-left custom-left-arrow " >
+            <i className="fa-solid fa-lg fa-arrow-left"></i>
+            </div>}
+            customRightArrow={<div className="arrow arrow-right custom-right-arrow " >
+            <i className="fa-solid fa-lg fa-arrow-right"></i>
+            </div>}
         >
             <div className="testimonials">
             {
@@ -67,15 +73,11 @@ const Testimonials = () => {
                     </div>
                 </div> )
             }
-        </div>
-      </Carousel>
+            </div>
+        </Carousel>
         <div className="arrows">
-            <div className="arrow">
-                <i className="fa-solid fa-lg fa-arrow-left"></i>
-            </div>
-            <div className="arrow">
-                <i className="fa-solid fa-lg fa-arrow-right"></i>
-            </div>
+            <customLeftArrow/>
+            <customRightArrow/>
         </div>
     </div>
   )

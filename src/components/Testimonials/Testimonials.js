@@ -5,6 +5,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 const Testimonials = () => {
+  // console.log('fffffff')
     const responsive = {
         desktop: {
           breakpoint: { max: 3000, min: 1200 }, // xl screen

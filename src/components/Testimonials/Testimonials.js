@@ -1,11 +1,25 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './Testimonials.css'
 import { testimonials } from '../../data/data'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 const Testimonials = () => {
-  // console.log('fffffff')
+
+  const carouselRef = useRef(null)
+
+  const handleNextClick = () => {
+    if (carouselRef.current) {
+      carouselRef.current.next();
+    }
+  };
+
+  const handlePrevClick = () => {
+    if (carouselRef.current) {
+      carouselRef.current.previous();
+    }
+  };
+
     const responsive = {
         desktop: {
           breakpoint: { max: 3000, min: 1200 }, // xl screen
@@ -41,6 +55,7 @@ const Testimonials = () => {
         <p className='heading'>Testimonials</p>
         <Carousel 
             arrows={false}
+            ref={carouselRef}
             responsive={responsive}
             autoPlay={true}
             swipeable={true}
@@ -76,10 +91,10 @@ const Testimonials = () => {
             </div>
         </Carousel>
         <div className="arrows">
-            <div className="arrow arrow-left custom-left-arrow " >
+            <div className="arrow arrow-left custom-left-arrow " onClick={handlePrevClick}>
               <i className="fa-solid fa-lg fa-arrow-left"></i>
             </div>
-            <div className="arrow arrow-right custom-right-arrow " >
+            <div className="arrow arrow-right custom-right-arrow " onClick={handleNextClick}>
               <i className="fa-solid fa-lg fa-arrow-right"></i>
             </div>
         </div>

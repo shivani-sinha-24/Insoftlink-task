@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import './HomeSec1.css'
 import HomeNav from '../homeNav/HomeNav'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const HomeSec1 = ({scrolling, setScrolling}) => {
-
+    const navigate = useNavigate()
   return (
     <div className='sec1'>
       {!scrolling && <HomeNav scrolling={scrolling} setScrolling={setScrolling} />}
@@ -65,7 +65,7 @@ const HomeSec1 = ({scrolling, setScrolling}) => {
                 </div>
                 <button>Sign In</button>
                 <p className='or'>or</p>
-                <button  className='new-acc'onClick={(e)=>e.preventDefault()}>
+                <button  className='new-acc'onClick={(e)=>{e.preventDefault();navigate('/signup')}}>
                     Create New Account
                 </button>
             </form>

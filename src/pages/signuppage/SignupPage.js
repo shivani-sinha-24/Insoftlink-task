@@ -9,7 +9,7 @@ const SignupPage = () => {
   useEffect(() => {
     // Set the document title to '/home' when the component mounts
     document.title = 'ACTPal - Signup';
-  }, []);
+  });
   return (
     <div className='signup-page'>
       <SignupNav/>

@@ -18,31 +18,10 @@ function App() {
   };
 
   useEffect(() => {
-    try{
-      // Add the Google Translate script when the component mounts
-      const addScript = document.createElement("script");
-      addScript.setAttribute(
-        "src",
-        "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-      );
-        document.body.appendChild(addScript);
-        window.googleTranslateElementInit = googleTranslateElementInit;
-        // // Clean up the script when the component unmounts
-        // return () => {
-        //   document.body.removeChild(addScript);
-        //   delete window.googleTranslateElementInit;
-        // }
-    }
-    catch(err){
-      console.log(err)
-    }
-    
-  }, [scrolling]);
-  useEffect(() => {
-    try {
+    window.googleTranslateElementInit = googleTranslateElementInit;
         // Function to handle the scroll event
         const handleScroll = () => {
-          if (window.scrollY > 100) {
+          if (window.scrollY > 0) {
             setScrolling(true);
           } else {
             setScrolling(false);
@@ -51,10 +30,6 @@ function App() {
     
         // Attach the event listener when the component mounts
         window.addEventListener('scroll', handleScroll);
-    
-    } catch (error) {
-      console.log(error)
-    }
   }, [scrolling]);
 
  

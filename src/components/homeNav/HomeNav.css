@@ -1,27 +1,25 @@
 .home-nav{
-    padding: 10px 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* position: sticky;
-    top: 0; */
-    z-index: 10;
-    background-color: transparent; /* Set the initial background color */
+  padding: 10px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  z-index: 10;
+  background-color: transparent; 
 }  
-/* Your scrolled navbar styles */
-  .home-nav.scrolled {
-    background-color: black;
-    padding: 10px 80px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-  }
+.home-nav.scrolled {
+  background-color: #1E293C;;
+  padding: 10px 80px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
 .home-nav .right{
-    display: flex;
+  display: flex;
 }
 .home-nav .right .item:nth-child(1),
 .home-nav .right .item:nth-child(2),
@@ -29,8 +27,8 @@
 .home-nav .right .item:nth-child(4),
 .home-nav .right .item:nth-child(5),
 .home-nav .right .item:nth-child(6){    
-    border-right: 1px solid #888484;
-    padding: 5px 17.5px;
+  border-right: 1px solid #888484;
+  padding: 5px 17.5px;
 }
 
 

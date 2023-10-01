@@ -14,32 +14,13 @@ import HomeFaqs from '../../components/HomeFaqs/HomeFaqs'
 const Homepage = ({scrolling, setScrolling}) => {
 
   useEffect(() => {
-    // Function to handle the scroll event
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrolling(true);
-      } else {
-        setScrolling(false);
-      }
-    };
-
-    // Attach the event listener when the component mounts
-    window.addEventListener('scroll', handleScroll);
-
-    // // Clean up the event listener when the component unmounts
-    // return () => {
-    //   window.removeEventListener('scroll', handleScroll);
-    // };
-  }, [scrolling]);
-
-  useEffect(() => {
     // Set the document title to '/home' when the component mounts
     document.title = 'ACTPal - Home';
   });
 
   return (
     <div>
-      {scrolling && <HomeNav  scrolling={scrolling} setScrolling={setScrolling}/>}
+      {<HomeNav  scrolling={scrolling} setScrolling={setScrolling}/>}
       <HomeSec1  scrolling={scrolling} setScrolling={setScrolling}/>
       <HomeServices/>
       <HomeAbout/>

@@ -7,7 +7,7 @@ const HomeSec1 = ({scrolling, setScrolling}) => {
     const navigate = useNavigate()
   return (
     <div className='sec1'>
-      {!scrolling && <HomeNav scrolling={scrolling} setScrolling={setScrolling} />}
+      {/* {!scrolling && <HomeNav scrolling={scrolling} setScrolling={setScrolling} />} */}
       <div className="welcome">
         <div className="left">
             <div className="top">

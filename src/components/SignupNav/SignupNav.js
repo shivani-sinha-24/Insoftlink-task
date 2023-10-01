@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './SignupNav.css'
+import { Link } from 'react-router-dom'
 
 const SignupNav = () => {
     const [showDD,setShowDD]=useState(false)
@@ -24,14 +25,14 @@ const SignupNav = () => {
                 <div className="item" onClick={()=>setShowDD(!showDD)}>Support <i className="fa-solid fa-caret-down"></i></div>
             </div>
         </div>
-        {
+        {/* {
             showDD &&
             <div className="dropdown-nav-menu">
                 <div><i class="fa-solid fa-ticket"></i><span>My Tickets</span></div>
                 <div><i class="fa-solid fa-headset"></i><span>Support</span></div>
                 <div><i class="fa-solid fa-circle-question"></i><span>Ask Your Question</span></div>
             </div> 
-        }
+        } */}
         <div className="nav-second">
             <div className="left">
                 <div className="item">

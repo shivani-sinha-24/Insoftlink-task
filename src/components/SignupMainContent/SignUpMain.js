@@ -3,8 +3,10 @@ import './SignUpMain.css'
 import { Link } from 'react-router-dom'
 
 const SignUpMain = () => {
+
   const [showPassword,setShowPassword] = useState(false)
   const [showConfirmPassword,setShowConfirmPassword] = useState(false)
+  
   return (
     <div className='main-content'>
       <form action="">

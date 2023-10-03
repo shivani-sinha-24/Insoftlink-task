@@ -19,17 +19,17 @@ function App() {
 
   useEffect(() => {
     window.googleTranslateElementInit = googleTranslateElementInit;
-        // Function to handle the scroll event
-        const handleScroll = () => {
-          if (window.scrollY > 0) {
-            setScrolling(true);
-          } else {
-            setScrolling(false);
-          }
-        };
     
-        // Attach the event listener when the component mounts
-        window.addEventListener('scroll', handleScroll);
+    // Function to handle the scroll event
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
   }, [scrolling]);
 
  

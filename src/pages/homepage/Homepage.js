@@ -14,14 +14,13 @@ import HomeFaqs from '../../components/HomeFaqs/HomeFaqs'
 const Homepage = ({scrolling, setScrolling}) => {
 
   useEffect(() => {
-    // Set the document title to '/home' when the component mounts
     document.title = 'ACTPal - Home';
   });
 
   return (
     <div>
-      {<HomeNav  scrolling={scrolling} setScrolling={setScrolling}/>}
-      <HomeSec1  scrolling={scrolling} setScrolling={setScrolling}/>
+      <HomeNav  scrolling={scrolling} setScrolling={setScrolling}/>
+      <HomeSec1  />
       <HomeServices/>
       <HomeAbout/>
       <HomeWork/>

@@ -1,13 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import './HomeSec1.css'
-import HomeNav from '../homeNav/HomeNav'
 import { Link, useNavigate } from 'react-router-dom'
 
-const HomeSec1 = ({scrolling, setScrolling}) => {
+const HomeSec1 = () => {
     const navigate = useNavigate()
+
   return (
     <div className='sec1'>
-      {/* {!scrolling && <HomeNav scrolling={scrolling} setScrolling={setScrolling} />} */}
       <div className="welcome">
         <div className="left">
             <div className="top">

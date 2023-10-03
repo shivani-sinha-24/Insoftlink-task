@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import './HomeNav.css'
 
-const HomeNav = ({scrolling, setScrolling}) => {
+const HomeNav = ({scrolling}) => {
 
-  // Define the CSS class based on the scrolling state
   const navbarClass = scrolling ? 'home-nav scrolled' : 'home-nav';
+  
   return (
     <div className={navbarClass}>
       <div className="left">

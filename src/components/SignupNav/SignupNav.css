@@ -13,7 +13,6 @@
 .signup-page .signup-nav .nav-second .left,
 .signup-page .signup-nav .nav-second .right{
     display: flex;
-    /* gap: 8px; */
     gap: 8px 20px;
 }
 .signup-page .signup-nav .nav-first .right{
@@ -23,7 +22,6 @@
 .signup-page .signup-nav .nav-first .left .item:nth-child(1){
     display: flex;
     gap: 8px;
-    /* align-items: center; */
     border-bottom: 1px solid white;
     height: fit-content;
 }
@@ -96,9 +94,7 @@
 }
 
 
-
 /* ************************** HOVER CSS ************************** */
-
 
 
 .signup-page .signup-nav .nav-first .left .item:nth-child(1) img:hover,

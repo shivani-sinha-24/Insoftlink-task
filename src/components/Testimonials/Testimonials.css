@@ -49,8 +49,8 @@
     max-height: 80%;
     overflow-y: auto;
     text-align: left;
-    display: flex;flex-direction: column;
-    /* gap: 10px; */
+    display: flex;
+    flex-direction: column;
 }
 .home-testimonial .testimonials .testimonial-card .text .detail{    
     font-size: 14px;

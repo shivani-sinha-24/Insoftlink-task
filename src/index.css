@@ -1,9 +1,6 @@
 body {
   font-family: 'Inter', sans-serif;
   top: 0px !important;
-  /* line-height: 1;
-  word-break: break-word;
-  font-weight: 400; */
 }
 body > .skiptranslate {
   display: none;

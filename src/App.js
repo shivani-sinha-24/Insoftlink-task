@@ -1,11 +1,14 @@
 import './App.css';
-import { Routes, Route } from 'react-router-dom';
-import HomePage from './pages/homepage/Homepage';
-import SignupPage from './pages/signuppage/SignupPage';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import HomePage from './pages/homepage/Homepage';
+import Layout from './Layout/Layout';
+import SignupPage from './pages/signuppage/SignupPage';
+import PostPage from './pages/postpage/PostPage';
 
 function App() {
   const [scrolling, setScrolling] = useState(false);
+  const location = useLocation()
 
   const googleTranslateElementInit = () => {
     new window.google.translate.TranslateElement(
@@ -16,7 +19,7 @@ function App() {
       "google_translate_element"
     );
   };
-
+  
   useEffect(() => {
     window.googleTranslateElementInit = googleTranslateElementInit;
     
@@ -30,13 +33,16 @@ function App() {
     };
 
     window.addEventListener('scroll', handleScroll);
-  }, [scrolling]);
+  }, [scrolling, location.pathname]);
 
  
   return (
     <Routes>
       <Route path='/' element={<HomePage scrolling={scrolling} setScrolling={setScrolling} />} />
-      <Route path='/signup' element={<SignupPage />} />
+      <Route path='/' element={<Layout/>}>
+        <Route path='signup' element={<SignupPage />} />
+        <Route path='post' element={<PostPage />} />
+      </Route>
     </Routes>
   );
 }

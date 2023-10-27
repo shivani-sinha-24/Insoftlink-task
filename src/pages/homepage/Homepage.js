@@ -14,7 +14,7 @@ import HomeFaqs from '../../components/HomeFaqs/HomeFaqs'
 const Homepage = ({scrolling, setScrolling}) => {
 
   useEffect(() => {
-    document.title = 'ACTPal - Home';
+    document.title = 'Welcome to ACTPAL, Enjoy Social connectivity with your friends and relative';
   });
 
   return (

@@ -1,41 +1,41 @@
-.signup-page .signup-nav{
+.signup-nav{
     color: white;
 }
-.signup-page .signup-nav .nav-first{
+.signup-nav .nav-first{
     background: #192334;
     padding: 10px 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.signup-page .signup-nav .nav-first .left,
-.signup-page .signup-nav .nav-first .right,
-.signup-page .signup-nav .nav-second .left,
-.signup-page .signup-nav .nav-second .right{
+.signup-nav .nav-first .left,
+.signup-nav .nav-first .right,
+.signup-nav .nav-second .left,
+.signup-nav .nav-second .right{
     display: flex;
     gap: 8px 20px;
 }
-.signup-page .signup-nav .nav-first .right{
+.signup-nav .nav-first .right{
     gap: 8px 30px;
     font-size: 15px;
 }
-.signup-page .signup-nav .nav-first .left .item:nth-child(1){
+.signup-nav .nav-first .left .item:nth-child(1){
     display: flex;
     gap: 8px;
     border-bottom: 1px solid white;
     height: fit-content;
 }
-.signup-page .signup-nav .nav-first .left .item .img-txt p:nth-child(1){
+.signup-nav .nav-first .left .item .img-txt p:nth-child(1){
     font-size: 10px !important;
 }
-.signup-page .signup-nav .nav-first .left .item .img-txt p:nth-child(2){
+.signup-nav .nav-first .left .item .img-txt p:nth-child(2){
     font-size: 13.5px !important;
 }
-.signup-page .signup-nav .nav-first img{
+.signup-nav .nav-first img{
     width: 20px;
     height: 20px;
 }
-.signup-page .signup-nav .nav-second{
+.signup-nav .nav-second{
     background: #1E293C;
     padding: 10px 80px;
     display: flex;
@@ -45,22 +45,20 @@
 }
 .signup-nav .dropdown-nav-menu{
     color: #1E293C;
-    width: fit-content;
-    background: plum;
     position: relative;
-    right: -1250px;
-    z-index: 1;
 }
-.signup-nav .dropdown-nav-menu div{
-    width: fit-content;
-    display: flex;
-    gap: 8px;
+.signup-nav .dropdown-nav-menu div.menus{
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    padding: 10px 20px;
+    z-index: 10;
+    right: 80px;
+}
+.signup-nav .nav-second .right{
     align-items: center;
 }
-.signup-page .signup-nav .nav-second .right{
-    align-items: center;
-}
-.signup-page .signup-nav .nav-second .left .item:nth-child(2) form{
+.signup-nav .nav-second .left .item:nth-child(2) form{
     background: #101928;
     display: flex;
     align-items: center;
@@ -69,7 +67,7 @@
     width: 324px;
     height: 38px;
 }
-.signup-page .signup-nav .nav-second .left .item:nth-child(2) form button{
+.signup-nav .nav-second .left .item:nth-child(2) form button{
     padding: 0;
     line-height: 0;
     background-color: transparent;
@@ -78,7 +76,7 @@
     width: 40px;
     font-size: 18px;
 }
-.signup-page .signup-nav .nav-second .left .item:nth-child(2) form input{
+.signup-nav .nav-second .left .item:nth-child(2) form input{
     color: #d7d7d7;
     background-color: transparent;
     border: none;
@@ -86,8 +84,8 @@
     font-family: 'Inter', sans-serif;
     flex: 1;
 }
-.signup-page .signup-nav .nav-second .right .item:nth-child(3),
-.signup-page .signup-nav .nav-second .right .item:nth-child(4){
+.signup-nav .nav-second .right .item:nth-child(3),
+.signup-nav .nav-second .right .item:nth-child(4){
     background: rgb(30, 30, 30);
     border-radius: 15px;
     padding:7px 12px;
@@ -97,9 +95,9 @@
 /* ************************** HOVER CSS ************************** */
 
 
-.signup-page .signup-nav .nav-first .left .item:nth-child(1) img:hover,
-.signup-page .signup-nav .nav-first .right .item:hover,
-.signup-page .signup-nav .nav-second .left .item:nth-child(1):hover,
-.signup-page .signup-nav .nav-second .right .item:hover{
+.signup-nav .nav-first .left .item:nth-child(1) img:hover,
+.signup-nav .nav-first .right .item:hover,
+.signup-nav .nav-second .left .item:nth-child(1):hover,
+.signup-nav .nav-second .right .item:hover{
     cursor: pointer;
 }

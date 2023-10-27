@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './HomeSec1.css'
 import { Link, useNavigate } from 'react-router-dom'
 
 const HomeSec1 = () => {
     const navigate = useNavigate()
+    const [email,setEmail]=useState('')
+    const [password,setPassword]=useState('')
+
+    const userObj = {
+        email,
+        password
+    }
 
   return (
     <div className='sec1'>
@@ -42,16 +49,19 @@ const HomeSec1 = () => {
             </div>
         </div>
         <div className="right">
-            <form action="">
+            <form 
+                action="" 
+                // onSubmit={()=>handleSubmit()}
+            >
                 <p className='h3'>Welcome back!</p>
                 <p>Login to your account to continue</p>
                 <div className="email_input">
                     <label htmlFor="email">Email Address</label>
-                    <input type="email" name="email" id="email" placeholder='Your E-mail' />
+                    <input type="email" name="email" id="email" value={email} placeholder='Your E-mail' onChange={(e)=>setEmail(e.target.value)}/>
                 </div>
                 <div className="email_input">
                     <label htmlFor="password">Your Password</label>
-                    <input type="password" name="password" id="password" placeholder='Your Password'/>
+                    <input type="password" name="password" id="password" value={password} placeholder='Your Password'onChange={(e)=>setPassword(e.target.value)}/>
                 </div>
                 <div className="remember">
                     <div className="left">
@@ -59,12 +69,25 @@ const HomeSec1 = () => {
                         <label htmlFor="conditions">Remember me</label>
                     </div>
                     <div className="right">
-                        <Link> Forgot Password?</Link>
+                        <Link to={`/`}> Forgot Password?</Link>
                     </div>
                 </div>
-                <button>Sign In</button>
+                <button 
+                    onClick={e=>{
+                        e.preventDefault();
+                        // handleSubmit()
+                    }}
+                >
+                    Sign In
+                </button>
                 <p className='or'>or</p>
-                <button  className='new-acc'onClick={(e)=>{e.preventDefault();navigate('/signup')}}>
+                <button  
+                    className='new-acc'
+                    onClick={(e)=>{
+                        e.preventDefault();
+                        navigate('/signup')
+                    }}
+                >
                     Create New Account
                 </button>
             </form>

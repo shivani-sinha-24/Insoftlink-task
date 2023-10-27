@@ -1,0 +1,318 @@
+.post-page{
+    background: #efecec;
+    padding: 25px 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.post-page .left{
+    flex: 1;
+    padding: 0;
+    border-radius: 8px;
+    overflow-y: auto;
+}
+.post-page .right .posts::-webkit-scrollbar,
+.post-page .left::-webkit-scrollbar{
+    display: none;
+}
+.post-page .left .top{
+    color: white;
+    padding: 0;
+    position: relative;
+    background-image: url(https://actpal.com/Content_V2/assets/img/shop-small-grid-1.png);
+    height: 393px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+.post-page .left .bottom{
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.post-page .left .bottom .icon{
+    text-align: right;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: fit-content;
+    background: #efecec;
+    position: absolute;
+    right: 15px;
+}
+.post-page .left .bottom .icon img{    
+    min-height: 20px !important;
+    min-width: 20px !important;
+}
+.post-page .left .bottom .image{
+    text-align: center;
+    margin-top: 25px;
+}
+.post-page .left .bottom p{
+    margin: 25px 0;
+}
+.post-page .right{
+    display: flex;
+    flex: 3.2;
+    gap: 15px;
+}
+.post-page .right .posts{
+    flex: 2.2;
+    height: 150vh; 
+     /* need to uncomment this line in the last*/
+    overflow-y: auto;
+}
+.post-page .right .posts .search-post{
+    border-radius: 8px;
+    width: 672px;
+    padding: 15px;
+    background: #FFFFFF;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+.post-page .right .posts .search-post form{
+    border: 1px solid #efecec;
+    border-radius: 5px;
+    flex: 3;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 5px 10px 5px 0px;
+}
+.post-page .right .posts .search-post form input,
+.post-page .right .posts .search-post form button{
+    border: none;
+}
+.post-page .right .posts .search-post form input{
+    flex:8;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+.post-page .right .posts .search-post form button{
+    background: white;
+    flex: 1;
+}
+.post-page .right .posts .search-post button img{
+    width: 15px;
+    height: 15px;
+}
+.post-page .right .posts .post{
+    width: 672px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ddd;
+    margin-bottom: 20px;
+    padding:15px 0;
+}
+.post-page .right .posts .post .post-owner{    
+    padding: 0 15px;
+    display: flex;
+    /* gap: 15px; */
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.post-page .right .posts .post .post-owner .owner-left{
+    display: flex;
+}
+.post-page .right .posts .post .post-owner .owner-right{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex; align-items: center;justify-content: center;
+    background: #efecec;
+}
+.post-page .right .posts .post .owner-image img{
+    width: 44px;
+    height: 44px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.post-page .right .posts .post .post-owner .owner-left .owner-detail .detail{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #212529;
+    line-height: 22px;
+    gap: 12.5px;
+    margin-bottom: 5px;
+    /* font-weight: 600; */
+    /* text-transform: capitalize; */
+}
+
+.post-page .right .posts .post .post-owner .owner-left .owner-detail .detail:nth-child(2) .p1{
+    background: #F6F6F6;
+    padding: 2.5px 12px;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0;
+    color: #6C757D !important;
+    /* margin-right: 10px; */
+}
+.post-page .right .posts .post .post-owner .owner-left .owner-detail .detail:nth-child(1) .p2{
+    color: #007BFF;
+}
+.post-page .right .posts .post .post-owner .owner-left .owner-detail .detail:nth-child(2) .p2{
+    font-size: 11px;
+    font-weight: 400;
+}
+.post-page .right .posts .post .owner-image i{
+    border: 2px solid white;
+    padding: 10px 0px ;
+    border-radius: 50%;
+    background: white;
+    position: relative;
+    background-position: center center !important;
+    /* top: 0px; */
+    left: -15px;
+}
+.post-page .posts .post .post-content .p-title,
+.post-page .posts .post .post-content .p-desciption,
+.post-page .posts .post .post-content .toggle-view,
+.post-page .posts .post .post-content .p-location,
+.post-page .posts .post .comments-sec{
+    padding: 0 15px ;
+}
+.post-page .posts .post .post-content .p-title{    
+    font-size: 20px !important;
+    color: black;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.post-page .posts .post .toggle-view{
+    height: 20px;
+    color: #1866b4;
+    font-weight: 700;
+    font-style: normal;
+    text-align: right;
+    cursor: pointer;
+}
+.post-page .posts .post .post-content .p-desciption{
+    font-size: 14px;
+    height: auto;
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+.post-page .posts .post .post-content .p-location{    
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+.post-page .posts .post .comment-detals{
+    padding: 22.5px 15px;
+    display: flex;
+}
+.post-page .right .groups{
+    flex: 1;
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 15px;
+    height: fit-content;
+}
+.post-page .right .groups .top{
+    border-bottom: 1px solid #DEE2E6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 -15px;
+    padding: 0 15px 10px 15px;    
+}
+.post-page .right .groups .top .left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.post-page .right .groups .top .left img{
+    width: 35px; 
+    height: 35px;
+}
+.post-page .right .groups .bottom .group-detail{
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.post-page .right .groups .bottom .gleft{
+    flex: 1;
+}
+.post-page .right .groups .bottom img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.post-page .right .groups .bottom .middle{
+    flex: 3.25;
+    
+    font-size: 14px;
+    font-weight: 600;
+    color: #2E2C34;
+    white-space: nowrap;
+    width: 130px;
+    overflow: hidden;
+    text-transform: capitalize;
+    text-overflow: ellipsis;
+    display: inline-block !important;
+    width: 100% !important;
+}
+.post-page .right .groups .bottom .notification{
+    /* background: #efecec;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center; */    
+    float: right;
+    vertical-align: top;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background: #f6f6f6;
+    padding: 0 !important;
+    margin: 0 !important;
+    line-height: 30px;
+    color: #1866B4 !important;
+    position: relative;
+}
+.likes-comment-section .numbers{
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.likes-comment-section .buttons{
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    clear: both !important;
+    position: relative;
+    z-index: 19;
+    color: #333 !important;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.cmnt-and-user{
+    background: #F6F6F6;
+    padding: 10px 8px;
+    position: relative;
+    border-radius: 5px;
+}
+.cmnt-by{
+    font-weight: 600;
+}

@@ -90,3 +90,52 @@ export const homeBlogs = [
         detail:'The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.'
     },
 ]
+
+export const footerLinks1 = [
+    `ACTPAL Information`, 
+    `Why We Are Different`, 
+    `How It Works`, 
+    `Become a Seller`, 
+    `© Copyright`, 
+    `Support`, 
+    `Support Contact Details`, 
+    `Support Privacy Policy`, 
+    `Support Request Form`, 
+    `My Support Requests`, 
+    `My Support Request Application`, 
+    `ACTPAL Guidance`
+]
+
+export const footerLinks2 = [
+    `About Us`,
+    `Privacy Policy`,
+    `Terms & Conditions`,
+    `Help & FAQs`
+]
+
+export const groupDetails = [
+    {
+        name:"HOBBIES AND ATIVITIES",
+        img:"https://actpalprodbucket.s3.amazonaws.com/Member/5/Group-Media/GroupProfile/173/202309260151580173_915.jpg",
+        members:"0",
+        notification:'3'
+    },
+    {
+        name:"TOYS AND GAMES",
+        img:"https://actpalprodbucket.s3.amazonaws.com/Member/5/Group-Media/GroupProfile/172/202309260150510172_312.jpg",
+        members:"0",
+        notification:'4'
+    },
+    {
+        name:"Fashion Implementation",
+        img:"https://actpalprodbucket.s3.amazonaws.com/Member/1960/Group-Media/GroupProfile/168/202309140704150168_648.jpg",
+        members:"1",
+        notification:'1'
+    },
+    {
+        name:"HOBBIES AND ATIVITIES",
+        img:"https://actpalprodbucket.s3.amazonaws.com/Member/5/Group-Media/GroupProfile/173/202309260151580173_915.jpg",
+        members:"0",
+        notification:'3'
+    },
+]

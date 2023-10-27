@@ -1,7 +1,7 @@
 .footer{
     background: #1E293C;
     color:#fafafa;
-    padding: 50px 80px 40px 80px;
+    padding: 50px 80px 42.5px 80px;
 }
 .footer .h4{
     margin-bottom: 5px;
@@ -9,7 +9,7 @@
     font-weight: 500 !important;
 }
 .footer .top{
-    padding-bottom: 40px;
+    padding-bottom: 55px;
 }
 .footer .top,
 .footer .bottom{
@@ -53,10 +53,18 @@
     margin: 18px 0;
     font-size: 14px;
 }
+.footer .top .right .content{
+    display: flex;
+    flex-direction: column;
+    gap: 18px 0;
+}
+.footer .top .right .content .link{
+    font-size: 14px;
+}
 .footer .bottom{
     border-top: 1px solid rgb(214, 214, 214);
     justify-content: space-between;
-    padding-top: 40px;
+    padding-top: 55px;
     align-items: center;
     font-size: 14px;
 }

@@ -1,5 +1,7 @@
 import React from 'react'
 import './Footer.css'
+import { Link } from 'react-router-dom'
+import { footerLinks1, footerLinks2 } from '../../data/data'
 
 const Footer = () => {
   return (
@@ -25,31 +27,21 @@ const Footer = () => {
         <div className="right">
           <div className="content">
             <p className='h4'>Company</p>
-            <p>ACTPAL Information</p>
-            <p>Why We Are Different</p>
-            <p>How It Works</p>
-            <p>Become a Seller</p>
-            <p>© Copyright</p>
-            <p>Support</p>
-            <p>Support Contact Details</p>
-            <p>Support Privacy Policy</p>
-            <p>Support Request Form</p>
-            <p>My Support Requests</p>
-            <p>My Support Request Application</p>
-            <p>ACTPAL Guidance</p>
+            {
+              footerLinks1?.map(link=><Link to={``} className='link'>{link}</Link>)
+            }
           </div>
           <div className="content">
-            <p className='h4'>My Account</p>
-            <p>About Us</p>
-            <p>Privacy Policy</p>
-            <p>Terms & Conditions</p>
-            <p>Help & FAQs</p>
+            <p className='h4'>My Account</p>            
+            {
+              footerLinks2?.map(link=><Link to={``} className='link'>{link}</Link>)
+            }
           </div>
         </div>
       </div>
       <div className="bottom">
         <div className="left">
-          <p>© Copyright 2023 ACTPAL. All rights reserved.</p>
+          <Link to={``} className='link'>© Copyright 2023 ACTPAL. All rights reserved.</Link>
         </div>
         <div className="right">
           <div>Privacy Policy</div>

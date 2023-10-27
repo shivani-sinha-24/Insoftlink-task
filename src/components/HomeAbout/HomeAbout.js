@@ -9,7 +9,7 @@ const HomeAbout = () => {
       <p className='h3'>We Are Different</p>
       <div className="abouts">
         {
-          aboutUs?.map(detail=> <div key={Number(Math.random()+new Date().getMilliseconds())} className="about">
+          aboutUs?.map(detail=> <div onClick={()=>window.location='/post'} key={Number(Math.random()+new Date().getMilliseconds())} className="about">
             <div className="left">
               <img src={detail?.img} alt="" />
             </div>

@@ -1,20 +1,20 @@
-.main-content{
+.signup-page .main-content{
     background: #efecec;
     padding: 50px 80px 160px 80px;
 }
-.main-content .h3{
+.signup-page .main-content .h3{
     font-weight: 600;
     font-size: 22px;
     margin-bottom: 10px;
 }
-.main-content p.desc{
+.signup-page .main-content p.desc{
     font-size: 14px;
     margin-bottom: 15px;
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
 }
-.main-content form{
+.signup-page .main-content form{
     width: 480px;
     max-width: 100%;
     background: #fff;
@@ -22,7 +22,7 @@
     padding: 30px;
     margin: auto;
 } 
-.main-content form label{
+.signup-page .main-content form label{
     color: #212529;
     font-size: 14px;
     line-height: 1.5;
@@ -31,12 +31,12 @@
     margin-bottom: 5px;
     font-family: 'Inter', sans-serif;
 }
-.main-content form .form_input{
+.signup-page .main-content form .form_input{
     margin: 0;
     padding: 0;
     height: 0;
 }
-.main-content form input{
+.signup-page .main-content form input{
     width: 100%;
     padding:12px;
     height: 36px;
@@ -49,17 +49,17 @@
     font-size: 16px;
     margin-bottom: 10px;
 }
-.main-content form i{
+.signup-page .main-content form i{
     position: relative;
     top: -42.5px;
     right: -390px;
 }
-.main-content .or{
+.signup-page .main-content .or{
     margin: 8px 0;
     text-align: center;
 }
-.main-content form button,
-.main-content .login-btn{
+.signup-page .main-content form button,
+.signup-page .main-content .login-btn{
     font-size: 15px;
     width: 100%;
     padding: 8px;
@@ -71,7 +71,7 @@
     border-radius: 4px;
     color: #1866B4;
 }
-.main-content label.conditions{
+.signup-page .main-content label.conditions{
     color: rgb(33, 37, 41);
     font-size: 14px;
     line-height: 2;
@@ -80,18 +80,18 @@
     margin-bottom: 5px;
     font-family: Inter, sans-serif;
 }
-.main-content input[type="checkbox"][name="conditions"]{
+.signup-page .main-content input[type="checkbox"][name="conditions"]{
     margin: 0 10px 0 0;
     width: 18px;
     height: 18px;
     position: relative;
     top: -10px;
 }
-.main-content form button.submit-btn{
+.signup-page .main-content form button.submit-btn{
     color: white;
     background: #1866B4;
 }
-.main-content .conditions{
+.signup-page .main-content .conditions{
     color: #007bff;
 }
 
@@ -99,6 +99,6 @@
 /* ************************** HOVER CSS ************************** */
 
 
-.main-content form button:hover{
+.signup-page .main-content form button:hover{
     cursor: pointer;
 }
